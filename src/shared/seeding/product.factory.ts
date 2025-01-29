@@ -1,4 +1,4 @@
-import { CatalogProduct } from "./../../entities";
+import { CatalogProduct } from "../../modules/shipping/domain/catalog_product/catalog_product.entity";
 import { setSeederFactory } from "typeorm-extension";
 
 

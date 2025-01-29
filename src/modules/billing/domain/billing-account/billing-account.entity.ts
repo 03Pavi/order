@@ -1,8 +1,12 @@
-import { Entity, PrimaryGeneratedColumn, Column, ManyToOne } from 'typeorm';
+import {
+  Entity,
+  Column,
+  PrimaryColumn,
+} from 'typeorm';
 
-@Entity('billing_accounts')
+@Entity('billing_account')
 export class BillingAccount {
-  @PrimaryGeneratedColumn('uuid')
+  @PrimaryColumn()
   billing_account_id: string;
 
   @Column({ type: 'varchar', length: 16 })

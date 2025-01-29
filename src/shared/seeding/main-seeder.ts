@@ -1,15 +1,13 @@
-import {
-  BillingAccount,
-  CatalogProduct,
-  SalesProduct,
-  ShippingProduct,
-} from '../../entities';
+import { BillingAccount } from '../../modules/billing/domain/billing-account/billing-account.entity';
+import { mockBillingAccounts } from '../../modules/billing/domain/billing-account/mock';
+import { SalesProduct } from '../../modules/sales/domain/sales_product/sales_product.entity';
+import { mockSalesProducts } from '../../modules/sales/domain/sales_product/mock';
+import { CatalogProduct } from '../../modules/shipping/domain/catalog_product/catalog_product.entity';
+import { mockCatalogProducts } from '../../modules/shipping/domain/catalog_product/mock';
+import { mockShippingProducts } from '../../modules/shipping/domain/shipping_product/mock';
+import { ShippingProduct } from '../../modules/shipping/domain/shipping_product/shipping_product.entity';
 import { DataSource } from 'typeorm';
 import { Seeder, SeederFactoryManager } from 'typeorm-extension';
-import { mockCatalogProducts } from '../../entities/catalog_products/mock';
-import { mockSalesProducts } from '../../entities/sales_products/mock';
-import { mockShippingProducts } from '../../entities/shipping_products/mock';
-import { mockBillingAccounts } from '../../entities/billing_accounts/mock';
 
 export class MainSeeder implements Seeder {
   public async run(

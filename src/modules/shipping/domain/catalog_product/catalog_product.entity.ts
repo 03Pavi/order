@@ -1,8 +1,9 @@
-import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
+import { Exclude } from 'class-transformer';
+import { Entity, PrimaryGeneratedColumn, Column, PrimaryColumn } from 'typeorm';
 
-@Entity('catalog_products')
+@Entity('catalog_product')
 export class CatalogProduct {
-  @PrimaryGeneratedColumn('uuid')
+  @PrimaryColumn('uuid')
   product_id: string;
 
   @Column({ type: 'varchar', length: 255 })

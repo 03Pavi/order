@@ -1,4 +1,4 @@
-import { BillingAccount } from "../../entities";
+import { BillingAccount } from "../../modules/billing/domain/billing-account/billing-account.entity";
 import { setSeederFactory } from "typeorm-extension";
 
 
